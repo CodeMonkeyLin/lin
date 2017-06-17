@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father{
+			width: 200px;
+			background-color: blue;
+			position: relative;
+		}
+		ul{
+			list-style: none;
+		}
+		li{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+		.son{
+			width: 122px;
+			height: 100%;
+			background-color: red;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<!-- <script>
+		setInterval(function(){
+			// console.log(window.screen.width)
+			// console.log(document.body.offsetWidth)
+		},1000)
+	</script> -->
+	<div class="father">
+		<div class="son"></div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- 伪元素设置百分比宽高时，必须要求父元素设置具体宽高值。所谓具体宽高值是指在样式中设置了。
+	如果父元素高度是被撑开的，子元素设置百分比宽高必须要设置定位才会有宽高。 -->
+</body>
+</html>

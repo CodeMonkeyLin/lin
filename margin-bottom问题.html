@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul{
+            border: 2px solid red;
+            height: 30px;
+            list-style: none;
+            /*float: right;*/
+
+        }
+        ul:after{
+            clear: both;
+            visibility: hidden;
+            height: 0;
+            content: "";
+            display: block;
+        }
+        li{
+            float: left;
+            width: 50px;
+            height: 26px;
+            background: blue;
+            margin-top: 0px;
+            margin-bottom: -3px;
+            /*float: left;*/
+            border: 2px solid yellow;
+        }
+        /*a{*/
+            /*display: block;*/
+            /*border: 3px solid green;*/
+            /*height: 10px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<ul>
+    <li>
+        <!--<a href="#"></a>-->
+    </li>
+
+</ul>
+<!-- 父盒子设置了高度，子盒子设置margin-bottom不会发挥作用，但是margin-top可以发挥作用。
+父盒子设置宽高，子盒子两值都可以发挥作用。 -->
+</body>
+</html>

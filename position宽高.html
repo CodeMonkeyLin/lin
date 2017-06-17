@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .father{
+            /*position: absolute;*/
+            /*width: 400px;*/
+            /*height: 400px;*/
+            background: red;
+            position: absolute;
+            border: 5px solid yellow;
+        }
+        .son{
+            width: 200px;
+            height: 200px;;
+            background: blue;
+            /*position: absolute;*/
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+<!--触发BFC条件-->
+<!--float属性部位none-->
+<!--position属性为absolute fixed-->
+<!--display为inline-block table-cell table-caption flex inline-flex-->
+<!--overflow不为visible-->
+</body>
+</html>
